@@ -1,0 +1,26 @@
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'app_api_v1'
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                'Implementation-Version': project_version,
+                'Main-Class': 'com.zeynalov.sample.springbootmvc.ApiApplication'
+    }
+}
+
+springBoot {
+    executable = true
+}
+
+dependencies {
+    // Spring Boot
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile("org.springframework:spring-web:${springFrameworkVersion}")
+
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-web-services')
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}

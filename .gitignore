@@ -1,0 +1,17 @@
+bin/
+target/
+build/
+out/
+.gradle/
+gradlew.bat
+
+.settings/
+.project
+.classpath
+.springBeans
+
+*.iml
+*.ipr
+*.iws
+.idea/
+.DS_Store
