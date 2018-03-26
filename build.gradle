@@ -21,18 +21,7 @@ allprojects {
         jcenter()
     }
 
-    configurations {
-        compile {
-            exclude group: 'ch.qos.logback'
-        }
-    }
-
     dependencies {
-        //logging
-        compile("org.apache.logging.log4j:log4j-api:${log4jVersion}")
-        compile("org.apache.logging.log4j:log4j-core:${log4jVersion}")
-        compile("org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}")
-
         // Spring
         compile("org.springframework:spring-core:${springFrameworkVersion}")
         compile("org.springframework:spring-context:${springFrameworkVersion}")

@@ -9,18 +9,18 @@ jar {
     }
 }
 
-springBoot {
-    executable = true
+bootJar {
+    launchScript()
 }
 
 dependencies {
     // Spring Boot
-    compile('org.springframework.boot:spring-boot-starter')
-    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile("org.springframework.boot:spring-boot-starter:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
     compile("org.springframework:spring-web:${springFrameworkVersion}")
 
-    compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-starter-web-services')
+    compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-web-services:${springBootVersion}")
 
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
 }
